@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Kanit', sans-serif;
 }
 
 .App-logo {
@@ -35,4 +36,75 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.imgHome{
+  background: url('https://images.pexels.com/photos/1112048/pexels-photo-1112048.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size:cover;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+
+
+
+.nav-item {
+  margin-left: 50px !important;
+}
+
+.headerText{
+  margin:0 auto;
+  width: 65%;
+  color:#DCDCDC;
+  border-width: 7px;
+  border-color: #DCDCDC;
+  padding: 50px;
+  border-radius: 1px;
+  font-size: 30px;
+  border-style:solid;
+}
+
+.androidBtn{
+  background-color: #2F4F4F;
+  font-size: 18px;
+  width:25vw;
+  margin:auto;
+  padding:10px;
+  border-radius: 15px;
+  margin-top: 35px;
+}
+
+
+
+.androidContainer :hover{
+  cursor: pointer;
+  background-color: whitesmoke;
+  transition: 0.3s;    
+}
+
+.imgContent{
+  width:450px;
+  margin-top: 5vh;
+}
+
+.bodyImage{
+  background: url('https://www.xmple.com/wallpaper/white-gradient-grey-linear-1920x1080-c2-708090-fffff0-a-345-f-14.svg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.headerBody{
+  font-size: 50px;
+  color:#2F4F4F
+}
+
+.footerContent{
+  padding:50px;
+  background-color: #696969;
+}
+.copyRight{
+  background-color: #2F4F4F;
+  padding:20px;
+  color:#DCDCDC
 }
