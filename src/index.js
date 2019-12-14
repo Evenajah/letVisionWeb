@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 // page
-import NavigationBar from './component/NavigationBar';
+import App from './App';
+import Book from './pages/Book'
 
 ReactDOM.render(
 
@@ -16,7 +16,7 @@ ReactDOM.render(
         <Switch>
 
             <Route exact path="/" component={App} />
-            <Route exact path="/ss" component={NavigationBar} />
+            <Route exact path="/book" component={Book} />
 
         </Switch>
 
