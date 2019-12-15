@@ -9,7 +9,7 @@ export default class AndroidDownload extends Component {
         return (
 
             <div className="androidContainer">
-                <p className="androidBtn"><AndroidIcon style={{ fontSize: 40 }} />&nbsp;&nbsp;ดาวน์โหลดในระบบ Android</p>
+                <a  target="_blank" href="https://drive.google.com/file/d/13eDeliP9abzw0yzic6NoUHG_Do-ALMtO/view?usp=sharing" className="androidBtn"><AndroidIcon style={{ fontSize: 40 }} />&nbsp;&nbsp;ดาวน์โหลดในระบบ Android</a>
 
             </div>
 

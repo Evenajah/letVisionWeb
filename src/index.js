@@ -8,6 +8,9 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // page
 import App from './App';
 import Book from './pages/Book'
+import ViewBook from './pages/ViewBook'
+import Contact from './pages/Contact'
+
 
 ReactDOM.render(
 
@@ -17,6 +20,8 @@ ReactDOM.render(
 
             <Route exact path="/" component={App} />
             <Route exact path="/book" component={Book} />
+            <Route exact path="/book/:id" component={ViewBook} />
+            <Route exact path="/contact" component={Contact} />
 
         </Switch>
 

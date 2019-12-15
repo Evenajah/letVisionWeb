@@ -4,18 +4,13 @@ import { Link } from 'react-router-dom';
 // material component
 import Fade from '@material-ui/core/Fade';
 import NavigationBar from '../component/NavigationBar';
-import Skeleton from '@material-ui/lab/Skeleton'
+// import Skeleton from '@material-ui/lab/Skeleton'
 import axios from 'axios';
 
 import Zoom from '@material-ui/core/Zoom';
 import Grid from '@material-ui/core/Grid';
 import VisibilityIcon from '@material-ui/icons/Visibility';
 import Footer from '../component/Footer';
-import Select from '@material-ui/core/Select';
-import MenuItem from '@material-ui/core/MenuItem';
-import FormControl from '@material-ui/core/FormControl';
-import InputLabel from '@material-ui/core/InputLabel';
-import { makeStyles } from '@material-ui/core/styles';
 
 
 
@@ -38,7 +33,7 @@ export default class Book extends Component {
         this.getCategory();
         axios.get('https://us-central1-letview-db16d.cloudfunctions.net/book/')
             .then((response) => {
-
+                console.log(response.data);
                 this.setState({
                     bookObj: response.data
                 })
@@ -48,7 +43,7 @@ export default class Book extends Component {
             })
     }
 
-    mapBook() {
+    mapAllBook() {
 
         // console.log('bookObj', this.state.bookObj)
         if (this.state.bookObj.length !== 0) {
@@ -72,7 +67,7 @@ export default class Book extends Component {
             return (
                 <div className="itemBook">
 
-                    <img className="imgBook" src='https://icon-library.net/images/loading-gif-icon/loading-gif-icon-19.jpg' />
+                    <img src='https://icon-library.net/images/loading-gif-icon/loading-gif-icon-19.jpg' />
 
 
                 </div>
@@ -115,29 +110,11 @@ export default class Book extends Component {
 
                             <div className="headerTextBook">หนังสือทั้งหมด</div>
 
-
-                            <FormControl>
-                                <InputLabel id="demo-simple-select-label">Age</InputLabel>
-                                <Select
-                                    labelId="demo-simple-select-label"
-                                    id="demo-simple-select"
-                                    value="fsd"
-                                    onChange={this.getCategory()}
-
-                                >
-
-                                    <MenuItem value={10}>Ten</MenuItem>
-                                    <MenuItem value={20}>Twenty</MenuItem>
-                                    <MenuItem value={30}>Thirty</MenuItem>
-                                </Select>
-                            </FormControl>
-
-
                             <div className="wrapBook" >
                                 <center><h1 style={{ color: '#BEBEBE', padding: 35 }}>หนังสือทั้งหมด</h1></center>
                                 <Grid container spacing={10}>
 
-                                    {this.mapBook()}
+                                    {this.mapAllBook()}
                                 </Grid>
                             </div>
 

@@ -24,13 +24,13 @@ export default class NavigationBar extends Component {
                         <Link to="/book" class="nav-link" href="#"><MenuBookIcon style={{ margin: 5 }} /><br /> หนังสือ</Link>
                     </li>
                     <li class="nav-item">
-                        <Link to="contact" class="nav-link" href="#"><ContactMailIcon style={{ margin: 5 }} /> <br />ติดต่อ</Link>
+                        <Link to="/contact" class="nav-link" href="#"><ContactMailIcon style={{ margin: 5 }} /> <br />ติดต่อ</Link>
                     </li>
 
                 </ul>
                 <ul class="navbar-nav navbar-right">
                     <li class="nav-item">
-                        <Link to="contact" class="nav-link" href="#"><SystemUpdateIcon style={{ margin: 5 }} /><br /> ดาวน์โหลด</Link>
+                        <a class="nav-link" href="https://drive.google.com/file/d/13eDeliP9abzw0yzic6NoUHG_Do-ALMtO/view?usp=sharing" target="_blank"><SystemUpdateIcon style={{ margin: 5 }} /><br /> ดาวน์โหลด</a>
                     </li>
                 </ul>
             </nav>
